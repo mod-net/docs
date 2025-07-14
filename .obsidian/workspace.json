@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Overview.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
@@ -35,6 +35,20 @@
               },
               "icon": "lucide-file",
               "title": "1.5. High Level Architecture Summary"
+            }
+          },
+          {
+            "id": "d4d11885d7e6a858",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docs/2. Blockchain Architecture/2.6. EVM Integration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.6. EVM Integration"
             }
           }
         ]
@@ -183,8 +197,9 @@
   },
   "active": "ae59384a137d370a",
   "lastOpenFiles": [
-    "Docs/1. Executive Summary/1.5. High Level Architecture Summary.md",
+    "Docs/2. Blockchain Architecture/2.6. EVM Integration.md",
     "Overview.md",
+    "Docs/1. Executive Summary/1.5. High Level Architecture Summary.md",
     "Attachments/Substrate Chain Fork & Bridge Proposal.pdf",
     "Docs/3. Off-Chain Architecture/3.1. SDK Architecture.md",
     "Docs/3. Off-Chain Architecture/3.2. Telemetry Module.md",

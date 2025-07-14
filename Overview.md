@@ -20,7 +20,11 @@
 
 ![[2.5. Emissions Pallet Architecture]]
 
+![[2.6. EVM Integration]]
 ### 3. Off-Chain Architecture
+![[3.1. SDK Architecture]]
+
+![[3.2. Telemetry Module]]
 
 ### Appendices
 ![[Appendix A. Glossary and Resources]]
