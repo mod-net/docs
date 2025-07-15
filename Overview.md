@@ -14,7 +14,7 @@
 
 ![[2.2. Governance Pallet Architecture]]
 
-![[2.3. Module Pallet Architecture]]
+![[2.3. Mod Pallet Architecture]]
 
 ![[2.4. Vaults Pallet Architecture]]
 
