@@ -4,68 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "01e43678aaeb407a",
-        "type": "split",
+        "id": "1a2c121b9e59b5dc",
+        "type": "tabs",
         "children": [
           {
-            "id": "1a2c121b9e59b5dc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ae59384a137d370a",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Overview.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Overview"
-                }
+            "id": "ae59384a137d370a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Overview.md",
+                "mode": "preview",
+                "source": false
               },
-              {
-                "id": "4d5be5536f108d72",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2.3. Mod Pallet Architecture"
-                }
-              }
-            ],
-            "currentTab": 1
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Overview"
+            }
           },
           {
-            "id": "300ac9cdc282dfee",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d9df3713793d56c9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Docs/2. Blockchain Architecture/2.4. Vaults Pallet Architecture.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2.4. Vaults Pallet Architecture"
-                }
-              }
-            ]
+            "id": "4d5be5536f108d72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.3. Mod Pallet Architecture"
+            }
+          },
+          {
+            "id": "c7342515d13249c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.3. Mod Pallet Architecture"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "85986c4e37d81038",
@@ -210,16 +196,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9df3713793d56c9",
+  "active": "97687953badb53d8",
   "lastOpenFiles": [
+    "Attachments/Excalidraw/modnet-meeting-4-2025-07-18-1447.png.crswap",
+    "Attachments/Excalidraw/modnet-meeting-4-2025-07-18-1447.png",
+    "Attachments/Excalidraw/modnet-meeting-3-2025-07-16-1702.png.crswap",
+    "Attachments/Excalidraw/modnet-meeting-3-2025-07-16-1702.png",
+    "Docs/2. Blockchain Architecture/2.4. Vaults Pallet Architecture.md",
     "Overview.md",
+    "README.md",
     "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
     "Attachments/Excalidraw/modnet-meeting-2-2025-07-15-1430.png.crswap",
     "Attachments/Excalidraw/modnet-meeting-2-2025-07-15-1430.png",
     "Docs/1. Executive Summary/1.5. High Level Architecture Summary.md",
     "Attachments/Excalidraw/modnet-meeting-1-2025-07-14-1111.png",
     "Docs/2. Blockchain Architecture/2.1. Core Blockchain Architecture.md",
-    "README.md",
     "Docs/1. Executive Summary/1.2. Key Features and Value Proposition.md",
     "Docs/1. Executive Summary/1.1. Vision.md",
     "Docs/2. Blockchain Architecture/2.6. EVM Integration.md",
@@ -229,7 +220,6 @@
     "Docs/3. Off-Chain Architecture/3.2. Module Architecture.md",
     "Docs/3. Off-Chain Architecture",
     "Docs/2. Blockchain Architecture/2.5. Emissions Pallet Architecture.md",
-    "Docs/2. Blockchain Architecture/2.4. Vaults Pallet Architecture.md",
     "Docs/2. Blockchain Architecture/2.2. Governance Pallet Architecture.md",
     "Docs/1. Executive Summary/1.4. Use Case Categories.md",
     "Docs/1. Executive Summary/1.3. Target Audiences.md",
@@ -240,7 +230,6 @@
     "Docs/2. System Architecture/2.1. Core Blockchain Architecture",
     "Docs/2. Blockchain Architecture",
     "Docs/1. Executive Summary",
-    "Module Incentive Structure.md",
-    "Untitled/Untitled"
+    "Module Incentive Structure.md"
   ]
 }
