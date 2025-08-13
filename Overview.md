@@ -21,6 +21,8 @@
 ![[2.5. Emissions Pallet Architecture]]
 
 ![[2.6. EVM Integration]]
+
+![[2.7. Vested Bridge]]
 ### 3. Off-Chain Architecture
 ![[3.1. SDK Architecture]]
 

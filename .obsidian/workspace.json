@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Overview.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
@@ -24,35 +24,20 @@
             }
           },
           {
-            "id": "4d5be5536f108d72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2.3. Mod Pallet Architecture"
-            }
-          },
-          {
             "id": "c7342515d13249c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
+                "file": "Docs/2. Blockchain Architecture/2.7. Vested Bridge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.3. Mod Pallet Architecture"
+              "title": "2.7. Vested Bridge"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,23 +181,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97687953badb53d8",
+  "active": "ae59384a137d370a",
   "lastOpenFiles": [
+    "Docs/2. Blockchain Architecture/2.7. Vested Bridge.md",
+    "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
+    "Overview.md",
+    "Docs/4. Commune AI Changes",
+    "Docs/2. Blockchain Architecture/2.4. Vaults Pallet Architecture.md",
+    "Docs/1. Executive Summary/1.5. High Level Architecture Summary.md",
+    "Docs/1. Executive Summary/1.4. Use Case Categories.md",
+    "Docs/1. Executive Summary/1.3. Target Audiences.md",
+    "Docs/1. Executive Summary/1.2. Key Features and Value Proposition.md",
+    "Docs/1. Executive Summary/1.1. Vision.md",
     "Attachments/Excalidraw/modnet-meeting-4-2025-07-18-1447.png.crswap",
     "Attachments/Excalidraw/modnet-meeting-4-2025-07-18-1447.png",
     "Attachments/Excalidraw/modnet-meeting-3-2025-07-16-1702.png.crswap",
     "Attachments/Excalidraw/modnet-meeting-3-2025-07-16-1702.png",
-    "Docs/2. Blockchain Architecture/2.4. Vaults Pallet Architecture.md",
-    "Overview.md",
     "README.md",
-    "Docs/2. Blockchain Architecture/2.3. Mod Pallet Architecture.md",
     "Attachments/Excalidraw/modnet-meeting-2-2025-07-15-1430.png.crswap",
     "Attachments/Excalidraw/modnet-meeting-2-2025-07-15-1430.png",
-    "Docs/1. Executive Summary/1.5. High Level Architecture Summary.md",
     "Attachments/Excalidraw/modnet-meeting-1-2025-07-14-1111.png",
     "Docs/2. Blockchain Architecture/2.1. Core Blockchain Architecture.md",
-    "Docs/1. Executive Summary/1.2. Key Features and Value Proposition.md",
-    "Docs/1. Executive Summary/1.1. Vision.md",
     "Docs/2. Blockchain Architecture/2.6. EVM Integration.md",
     "Attachments/Substrate Chain Fork & Bridge Proposal.pdf",
     "Docs/3. Off-Chain Architecture/3.1. SDK Architecture.md",
@@ -221,15 +210,11 @@
     "Docs/3. Off-Chain Architecture",
     "Docs/2. Blockchain Architecture/2.5. Emissions Pallet Architecture.md",
     "Docs/2. Blockchain Architecture/2.2. Governance Pallet Architecture.md",
-    "Docs/1. Executive Summary/1.4. Use Case Categories.md",
-    "Docs/1. Executive Summary/1.3. Target Audiences.md",
     "Docs/Appendices/Appendix A. Glossary and Resources.md",
     "Docs/Appendices",
     "Docs",
     "Docs/2. System Architecture/2.2. Module System Architecture",
     "Docs/2. System Architecture/2.1. Core Blockchain Architecture",
-    "Docs/2. Blockchain Architecture",
-    "Docs/1. Executive Summary",
     "Module Incentive Structure.md"
   ]
 }
