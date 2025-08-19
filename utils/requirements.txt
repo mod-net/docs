@@ -2,3 +2,4 @@ mammoth==1.8.0
 html2text==2024.2.26
 markdown==3.6
 weasyprint==61.2
+pydyf>=0.12.0
