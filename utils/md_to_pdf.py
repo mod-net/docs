@@ -44,7 +44,33 @@ try:
     if len(_sig.parameters) == 1:  # only 'self'
         _orig_init = pydyf.PDF.__init__
 
-        def _compat_init(self, *args, **kwargs):  # ignore extra args
+        def _compat_init(self, *args, **kwargs):
+            # Accept and store version/identifier expected by newer WeasyPrint
+            version = None
+            identifier = None
+            if len(args) >= 1:
+                version = args[0]
+            if len(args) >= 2:
+                identifier = args[1]
+            version = kwargs.get('version', version)
+            identifier = kwargs.get('identifier', identifier)
+
+            # Normalize version to bytes like b'1.7'
+            if isinstance(version, str):
+                version_b = version.encode('ascii', errors='ignore')
+            elif isinstance(version, (bytes, bytearray)):
+                version_b = bytes(version)
+            else:
+                version_b = b'1.7'
+
+            # Store attributes that WeasyPrint expects to read later
+            try:
+                self.version = version_b
+                self.identifier = identifier
+            except Exception:
+                pass
+
+            # Call original no-arg initializer
             return _orig_init(self)
 
         pydyf.PDF.__init__ = _compat_init  # type: ignore
