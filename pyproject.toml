@@ -1,0 +1,13 @@
+[project]
+name = "docs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "html2text==2024.2.26",
+    "mammoth==1.8.0",
+    "markdown==3.6",
+    "pydyf==0.11.0",
+    "weasyprint==60.2",
+]
