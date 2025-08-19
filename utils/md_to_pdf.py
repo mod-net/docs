@@ -30,7 +30,7 @@ except ImportError:
     raise
 
 try:
-    from weasyprint import HTML, CSS  # type: ignore
+    from weasyprint import HTML  # type: ignore
 except ImportError:
     print("Missing dependency 'weasyprint'. Run: pip install -r utils/requirements.txt", file=sys.stderr)
     raise
@@ -79,7 +79,15 @@ def md_to_pdf(input_path: pathlib.Path, output_path: Optional[pathlib.Path] = No
         output_format="html5",
     )
 
-    # Wrap in a minimal HTML document
+    # Read external CSS if provided, else use default
+    if css_path is not None:
+        if not css_path.exists():
+            raise FileNotFoundError(f"CSS file not found: {css_path}")
+        css_text = css_path.read_text(encoding="utf-8")
+    else:
+        css_text = DEFAULT_CSS
+
+    # Wrap in a minimal HTML document (CSS inlined in <style>)
     html_doc = f"""
 <!DOCTYPE html>
 <html lang=\"en\">
@@ -87,6 +95,9 @@ def md_to_pdf(input_path: pathlib.Path, output_path: Optional[pathlib.Path] = No
   <meta charset=\"utf-8\" />
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
   <title>{input_path.stem}</title>
+  <style>
+{css_text}
+  </style>
 </head>
 <body>
 {html_body}
@@ -100,15 +111,8 @@ def md_to_pdf(input_path: pathlib.Path, output_path: Optional[pathlib.Path] = No
     else:
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # CSS handling: external CSS if provided, else default CSS
-    css_objs = []
-    if css_path is not None:
-        css_objs.append(CSS(filename=str(css_path)))
-    else:
-        css_objs.append(CSS(string=DEFAULT_CSS))
-
-    # Render to PDF
-    HTML(string=html_doc, base_url=str(input_path.parent)).write_pdf(str(output_path), stylesheets=css_objs)
+    # Render to PDF (styles already inlined)
+    HTML(string=html_doc, base_url=str(input_path.parent)).write_pdf(str(output_path))
     return output_path
 
 
