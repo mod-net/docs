@@ -58,6 +58,9 @@ def main(argv=None) -> int:
             print(str(result_path))
             return 0
         except Exception as e:
+            # Print full traceback for easier debugging
+            import traceback
+            traceback.print_exc()
             print(f"Error: {e}", file=sys.stderr)
             return 1
 
