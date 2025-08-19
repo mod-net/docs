@@ -35,6 +35,23 @@ except ImportError:
     print("Missing dependency 'weasyprint'. Run: pip install -r utils/requirements.txt", file=sys.stderr)
     raise
 
+# Compatibility shim: If running with older pydyf (PDF.__init__ takes only self),
+# monkeypatch __init__ to accept extra args used by newer WeasyPrint versions.
+try:
+    import inspect  # type: ignore
+    import pydyf  # type: ignore
+    _sig = inspect.signature(pydyf.PDF.__init__)
+    if len(_sig.parameters) == 1:  # only 'self'
+        _orig_init = pydyf.PDF.__init__
+
+        def _compat_init(self, *args, **kwargs):  # ignore extra args
+            return _orig_init(self)
+
+        pydyf.PDF.__init__ = _compat_init  # type: ignore
+except Exception:
+    # Best-effort patch; if anything goes wrong, let WeasyPrint raise normally
+    pass
+
 
 DEFAULT_CSS = """
 @page { size: A4; margin: 24mm 18mm; }
